@@ -91,12 +91,16 @@ input::placeholder {
     border: none;
     outline: none;
     font-size: 1rem;
+    background-color: rgb(123, 216, 165);
     transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 4px #000000;
+
     /* background-color: blue; */
 }
 .btn-save:hover {
-    background: rgb(40, 65, 63);
+    background: rgb(45, 179, 105);
     color: #ffffff;
+    box-shadow: 2px 2px 6px #000000;
     /* background: transparent; */
 }
 

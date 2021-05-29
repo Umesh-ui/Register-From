@@ -20,6 +20,9 @@ import React,{useState} from 'react';
     const handleInput = (e) => {
         const name = e.target.name;
         const value = e.target.value;
+
+        
+        
         // console.log(name,value)
 
             // by using the spread operator the values will be stored in the array element of the userRegister
@@ -31,8 +34,16 @@ import React,{useState} from 'react';
     const handleSubmit = (e) => {
         // to prevent form from submitting
         e.preventDefault()
-        // creating new array of object & stiring the data into it
+        // creating new array of object & stiring the data into it.
+        
 
+        if (userRegister.username==="" ||userRegister.email===""||userRegister.phone===""||userRegister.password==="") {
+            // var nameErrr = "Please Fill Username";
+            alert("Please Fill All Fields");
+        }
+        
+        else {
+     
         const newRecord={...userRegister,id:new Date().getTime().toString()}
         console.log(records)
 
@@ -45,9 +56,14 @@ import React,{useState} from 'react';
             phone: "",
             password: ""
         });
+        }
+        
+      
+
+            
 
     }
-
+        
 
 
 
@@ -55,22 +71,22 @@ import React,{useState} from 'react';
     return (
             <>
             <div className="frm-container">
-                <form action="" onSubmit={handleSubmit}>
+                <form action="" onSubmit={handleSubmit} >
                     <h1>Register Here</h1>
                 <div>
                     <label htmlFor="username">Fullname :-
                     <input type="text" name="username" id="username"  placeholder="Enter Here"  autoComplete="off"  
                     value={userRegister.username} 
-                    onChange={handleInput}
-                    /></label>
+                                onChange={handleInput} title="This " /></label>
+                        
                 </div>
-
+                    
                 <div>
                     <label htmlFor="email">Email :-
-                    <input type="text" name="email" id="email" placeholder="Enter Here"   autoComplete="off"  
+                    <input type="email" name="email" id="email" placeholder="Enter Here"   autoComplete="off"  
                     value={userRegister.email} 
-                    onChange={handleInput}
-                    /></label>
+                    onChange={handleInput} required
+                     /></label>
                 </div>
                     
                     
@@ -79,7 +95,7 @@ import React,{useState} from 'react';
                     <input type="number" name="phone" id="phone" placeholder="Enter Here"   autoComplete="off"  
                     value={userRegister.phone} 
                     onChange={handleInput}
-                    /></label>
+                     /></label>
                     </div>
                     
 

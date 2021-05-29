@@ -1,0 +1,18 @@
+**********INSTRUCTIONS TO USE THE 'FORM REGISTRATION' WEB APP****************
+
+1.Open any IDE or Code Editor & save all the files in it.
+
+2.Open Terminal & make sure you have installed 'npm' as well as 'npx'.
+
+3.If installed just type ' npm start ' in the terminal & wait for a second, now open ,
+# [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+4.Next Just Enter The Details in the form & you got it.
+
+5.now You can edit the code as you want the react server will automatically reload the page.
+
+
+
+(for more reffer to README.md attached with the project..)
+
+
