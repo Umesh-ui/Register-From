@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+#  const [userRegister,setuserRegister]=useState({
+    user:'';
+    etc.
+#  })
+#here userSatete have the initail value which is an object storing the values of the inputfield
+# & userRegister have current value &
+# setuserRegister have the updated value
+# mean as the value is being saved in the set function it will automatically displayed inthe current value variable
